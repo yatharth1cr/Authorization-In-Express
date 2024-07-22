@@ -5,3 +5,5 @@
 ## 2. Authorizing Routes
 - **Protecting Endpoints**
 - **Passing logged user data to server**
+## 3. Associating logged in users with resources
+- **Associating logged in users with articles**
