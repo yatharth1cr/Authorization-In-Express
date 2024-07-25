@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= article.title %></title>
+    <link rel="stylesheet" href="/stylesheets/singleArticle.css" />
+  </head>
+  <body>
+    <header>
+      <h1 style="color: white">Single Article</h1>
+      <a href="/article">
+        <h3>🔙Back To Articles</h3>
+      </a>
+    </header>
+    <main>
+      <section>
+        <div>
+          <h1><%= article.title %></h1>
+          <p><%= article.description %></p>
+          <p><%= article.tags %></p>
+          <p><%= article.author %></p>
+          <p><%= article.likes %></p>
+        </div>
+        <div class="btn">
+          <a href="/article/<%= article.id %>/edit" class="edit">✏️</a>
+          <a href="/article/<%= article.id %>/delete" class="delete">🗑️</a>
+          <a href="/article/<%= article.id %>/like" class="like">👍</a>
+          <a href="/article/<%= article.id %>/dislike" class="dislike">👎</a>
+        </div>
+      </section>
+      <div>
+        <form action="/article/<%= article.id %>/comments" method="post">
+          <textarea
+            name="content"
+            rows="3"
+            placeholder="Add Comment..."
+            required
+          ></textarea>
+          <input type="submit" value="Add Comment💬" class="btn-comment" />
+        </form>
+      </div>
+      <section class="comments-section">
+        <h2>Comments</h2>
+        <hr />
+        <% article.comments.forEach(comment => { %>
+        <div class="comment">
+          <p><strong><%= comment.author %>:</strong> <%= comment.content %></p>
+          <div class="comment-btns">
+            <a href="/article/comments/<%= comment.id %>/edit" class="edit"
+              >✏️</a
+            >
+            <a href="/article/comments/<%= comment.id %>/delete" class="delete"
+              >🗑️</a
+            ><a href="/article/comments/<%= comment.id %>/like" class="like"
+              >(<%= comment.likes %>)👍
+            </a>
+            <a
+              href="/article/comments/<%= comment.id %>/dislike"
+              class="dislike"
+              >(<%= comment.dislikes %>)👎
+            </a>
+          </div>
+        </div>
+        <% }) %>
+      </section>
+    </main>
+  </body>
+</html>

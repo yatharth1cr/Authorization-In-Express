@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Article Form</title>
+    <link rel="stylesheet" href="/stylesheets/editArticleForm.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Update Article Form</h1>
+      <a href="/article">
+        <h2>Back To Articles</h2>
+      </a>
+    </header>
+    <form action="/article/<%= article.id %>" method="post">
+      <input
+        type="text"
+        name="title"
+        placeholder="Enter Title"
+        required
+        value="<%= article.title %>"
+      />
+      <input
+        type="text"
+        name="description"
+        placeholder="Enter Description"
+        required
+        value="<%= article.description %>"
+      />
+      <input
+        type="text"
+        name="tags"
+        placeholder="Enter Tags"
+        required
+        value="<%= article.tags %>"
+      />
+      <input
+        type="text"
+        name="author"
+        placeholder="Enter Author"
+        required
+        value="<%= article.author %>"
+      />
+      <input
+        type="number"
+        name="likes"
+        placeholder="Likes"
+        required
+        value="<%= article.likes %>"
+      />
+      <button type="submit">Save Article</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,193 @@
+/* Reset some default browser styles */
+body,
+h1,
+h3,
+p,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Basic styles for the body */
+body {
+  background-color: lightgray;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background: #333;
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+  color: salmon;
+}
+
+header a {
+  display: inline-block;
+  padding: 12px 25px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Container for article content */
+main {
+  width: 70%;
+  background: #fff;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Styles for article details */
+section div p {
+  font-size: 1.1em;
+  color: #333;
+  margin: 1rem 0;
+}
+
+/* Styles for links */
+section div a {
+  margin: 0 5px;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  width: 5%;
+}
+
+.edit {
+  background-color: #04a92c;
+}
+
+.delete {
+  background-color: #d35a5a;
+}
+
+.like {
+  background-color: #1885f2;
+}
+
+.dislike {
+  background-color: chocolate;
+}
+
+section div a:hover {
+  font-weight: bold;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+textarea {
+  width: 40%;
+}
+
+.btn-comment {
+  background-color: darkcyan;
+  border: none;
+  margin-top: 10px;
+  padding: 0.5rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-comment:hover {
+  background-color: rgb(5, 89, 5);
+}
+
+/* Comments section styles */
+.comments-section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.comments-section h2 {
+  margin-bottom: 0;
+  color: darkcyan;
+}
+
+hr {
+  margin: 0 auto 2rem auto;
+}
+
+.comment {
+  width: 98%;
+  background: #dadada;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.comment p {
+  margin: 0;
+}
+
+.comment .comment-btns {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.comment .comment-btns a {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  /* width: 7%;s */
+}
+
+.edit-comment {
+  background-color: #007bff;
+}
+
+.delete-comment {
+  background-color: #dc3545;
+}
+
+.comment .comment-btns a:hover {
+  font-weight: bold;
+}

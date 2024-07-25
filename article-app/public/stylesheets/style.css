@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: cursive;
+}
+
+header {
+  background-color: #cbb697;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  padding: 0 1rem;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 1rem;
+  background-color: lightseagreen;
+}
+
+h2 {
+  margin: 1rem;
+  color: black;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+button {
+  padding: 0.5rem 2rem;
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+}
