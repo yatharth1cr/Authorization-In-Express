@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/stylesheets/dashboard.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <a href="/users" class="home-btn">
+        <h1>User</h1>
+      </a>
+      <a href="/users/register" class="head-btn"><p>Register User</p></a>
+    </header>
+
+    <div class="dashboard-container">
+      <h1>Welcome, <%= user.name %>!</h1>
+      <p>Email: <%= user.email %></p>
+      <!-- Add more user-specific information here -->
+      <a href="/users/logout">Logout</a>
+    </div>
+  </body>
+</html>

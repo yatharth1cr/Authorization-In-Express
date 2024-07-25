@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- title of the page  -->
+    <title>Registration Form</title>
+
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="/stylesheets/registrationForm.css" />
+  </head>
+  <body>
+    <!-- header  -->
+    <header>
+      <a href="/users" class="home-btn">
+        <h1>User</h1>
+      </a>
+      <a href="/users/login" class="head-btn"><p>Login User</p></a>
+    </header>
+
+    <!-- registration form  -->
+    <form action="/users/register" method="post">
+      <h2>Registration Form</h2>
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <ul>
+        <li>
+          Password must be atleast 5 character and contains atleast one
+          lowercase, one uppercase, one number and one Special character
+        </li>
+      </ul>
+      <input type="number" name="age" placeholder="Age (Optional)" />
+      <input type="tel" name="phone" placeholder="Phone (Optional)" />
+      <button type="submit">Register User</button>
+    </form>
+  </body>
+</html>

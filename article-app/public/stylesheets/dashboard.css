@@ -1,0 +1,80 @@
+/* dashboard.css */
+
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header styling */
+header {
+  background-color: #c9552b;
+  color: #fff;
+  padding: 4px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-btn {
+  text-decoration: none;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 0 2rem;
+}
+
+.home-btn {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home-btn:hover {
+  color: black;
+}
+
+.head-btn:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+/* Container for the dashboard content */
+.dashboard-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Heading styling */
+.dashboard-container h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+/* Paragraph styling */
+.dashboard-container p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+/* Logout button styling */
+.dashboard-container a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: crimson;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.dashboard-container a:hover {
+  background-color: #0056b3;
+}

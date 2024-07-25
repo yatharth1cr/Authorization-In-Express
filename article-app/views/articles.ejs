@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles</title>
+    <link rel="stylesheet" href="/stylesheets/articles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Articles</h1>
+      <a href="/article/new">
+        <h2>Create New Article</h2>
+      </a>
+    </header>
+    <% articles.forEach((a)=>{ %>
+    <section>
+      <div>
+        <a href="/article/<%= a.id %>">
+          <h2><%= a.title %></h2>
+        </a>
+      </div>
+    </section>
+    <% })%>
+  </body>
+</html>
