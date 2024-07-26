@@ -7,10 +7,17 @@
   <body>
     <header>
       <h1>HOME</h1>
+      <% if(user){ %>
+      <nav>
+        <a href="/article/new"><p>Add Article</p></a>
+        <a href="/users/logout"><p>Log Out</p></a>
+      </nav>
+      <% } else { %>
       <nav>
         <a href="/users/login"><p>Login User</p></a>
         <a href="/users/register"><p>Register User</p></a>
       </nav>
+      <% } %>
     </header>
     <h2>Article App</h2>
     <button><a href="/article">Go to Article</a></button>

@@ -4,7 +4,7 @@ var User = require("../models/User");
 
 // Render user list
 router.get("/", (req, res, next) => {
-  res.render("users");
+  res.render("index");
 });
 
 // Render registration form
@@ -52,7 +52,7 @@ router.post("/login", (req, res, next) => {
         }
 
         req.session.userId = user.id;
-        res.redirect("/users/dashboard");
+        res.redirect("/");
       });
     })
     .catch((err) => {
